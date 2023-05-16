@@ -135,7 +135,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#skills')}
+          onClick={() => (window.location.href = './#about')}
         />
       </section>
 
@@ -317,7 +317,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#projects')}
+          onClick={() => (window.location.href = './#skills')}
         />
       </section>
 
@@ -450,7 +450,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#contact')}
+          onClick={() => (window.location.href = './#projects')}
         />
       </section>
 
@@ -491,6 +491,14 @@ function Content() {
             <p>0432231694</p>
           </div>
         </div>
+        
+        <img
+          src={arrowIcon}
+          alt="Arrow icon"
+          className="icon arrowContact"
+          onClick={() => (window.location.href = './#contact')}
+        />
+        
       </section>
     </>
   );

@@ -296,7 +296,13 @@ section {
 .arrow {
   position: absolute;
   right: 0rem;
-  bottom: 0rem;
+  top: 0rem;
+}
+
+.arrowContact{
+  position: absolute;
+  right: 0rem;
+  top: 6rem;
 }
 
 .details-container {
@@ -398,6 +404,7 @@ article .text-container{
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  position: relative;
 }
 
 .contact-info-upper-container {

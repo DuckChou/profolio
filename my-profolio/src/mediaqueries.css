@@ -23,7 +23,7 @@
   .section-container {
     display: block;
   }
-  .arrow {
+  .arrow, .arrowContact {
     display: none;
   }
   section,
