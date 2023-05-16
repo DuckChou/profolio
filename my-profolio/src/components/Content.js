@@ -24,7 +24,19 @@ import keren_aware from '../assets/image/keren_aware.png';
 
 import jason_shop from '../assets/image/jason_shop.png';
 
+import cv from '../assets/files/CVJason.pdf';
+
 function Content() {
+  const handleDownloadCV = () => {
+    // window.open('../../public/files/CVJason.pdf', '_blank');
+    const fileUrl = cv;
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.target = '_blank';
+    link.download = 'CVJason.pdf';
+    link.click();
+  };
+
   return (
     <>
       <section id="profile">
@@ -36,10 +48,7 @@ function Content() {
           <h1 className="title">Jason Zhou</h1>
           <p className="section__text__p2">Fullstack Developer</p>
           <div className="btn-container">
-            <button
-              className="btn btn-color-2"
-              onClick={() => window.open('../assets/files/CVJason.pdf')}
-            >
+            <button className="btn btn-color-2" onClick={handleDownloadCV}>
               Download CV
             </button>
             <button
