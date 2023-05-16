@@ -397,7 +397,10 @@ function Content() {
                 </button>
                 <button
                   className="btn btn-color-2 project-btn"
-                  // onclick="location.href='https://github.com/'"
+                  onClick={() => {
+                    window.location.href =
+                      'https://main.d1qiuxeis8lh6i.amplifyapp.com/';
+                  }}
                 >
                   Live Demo
                 </button>
