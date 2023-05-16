@@ -1,15 +1,28 @@
 import React from 'react';
+
+// @ts-ignore
 import myImage from '../assets/image/myphoto.png';
+// @ts-ignore
 import linkedinIcon from '../assets/image/linkedin.png';
+// @ts-ignore
 import githubIcon from '../assets/image/github.png';
+// @ts-ignore
 import arrowIcon from '../assets/image/arrow.png';
+// @ts-ignore
 import experienceIcon from '../assets/image/experience.png';
+// @ts-ignore
 import educationIcon from '../assets/image/education.png';
+// @ts-ignore
 import checkmarkIcon from '../assets/image/checkmark.png';
+// @ts-ignore
 import emailIcon from '../assets/image/email.png';
+// @ts-ignore
 import phoneIcon from '../assets/image/phone-call.png';
+// @ts-ignore
 import Weather_app from '../assets/image/weatherapp.png';
+// @ts-ignore
 import keren_aware from '../assets/image/keren_aware.png';
+// @ts-ignore
 import jason_shop from '../assets/image/jason_shop.png';
 
 function Content() {
