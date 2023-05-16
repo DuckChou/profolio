@@ -1,28 +1,27 @@
 import React from 'react';
 
-// @ts-ignore
 import myImage from '../assets/image/myphoto.png';
-// @ts-ignore
+
 import linkedinIcon from '../assets/image/linkedin.png';
-// @ts-ignore
+
 import githubIcon from '../assets/image/github.png';
-// @ts-ignore
+
 import arrowIcon from '../assets/image/arrow.png';
-// @ts-ignore
+
 import experienceIcon from '../assets/image/experience.png';
-// @ts-ignore
+
 import educationIcon from '../assets/image/education.png';
-// @ts-ignore
+
 import checkmarkIcon from '../assets/image/checkmark.png';
-// @ts-ignore
+
 import emailIcon from '../assets/image/email.png';
-// @ts-ignore
+
 import phoneIcon from '../assets/image/phone-call.png';
-// @ts-ignore
+
 import Weather_app from '../assets/image/weatherapp.png';
-// @ts-ignore
+
 import keren_aware from '../assets/image/keren_aware.png';
-// @ts-ignore
+
 import jason_shop from '../assets/image/jason_shop.png';
 
 function Content() {
@@ -39,7 +38,7 @@ function Content() {
           <div className="btn-container">
             <button
               className="btn btn-color-2"
-              onClick={()=>(window.open('../assets/files/CVJason.pdf'))}
+              onClick={() => window.open('../assets/files/CVJason.pdf')}
             >
               Download CV
             </button>
@@ -55,7 +54,10 @@ function Content() {
               src={linkedinIcon}
               alt="My Linkedin"
               className="icon"
-              onClick={() => (window.location.href = 'https://www.linkedin.com/in/keren-zhou-040325267/')}
+              onClick={() =>
+                (window.location.href =
+                  'https://www.linkedin.com/in/keren-zhou-040325267/')
+              }
             />
             <img
               src={githubIcon}
@@ -370,13 +372,17 @@ function Content() {
                 products to cart, and checkout with Paypal.
               </p>
               <p style={{ marginBottom: '10px' }}>
-                Admin can manage products, orders, and users in the admin panel. <br/>
-                (username: admin@admin.com <br/> password: admin)
+                Admin can manage products, orders, and users in the admin panel.{' '}
+                <br />
+                (username: admin@admin.com <br /> password: admin)
               </p>
               <div className="btn-container">
                 <button
                   className="btn btn-color-2 project-btn"
-                  onClick={() => {window.location.href = 'https://github.com/DuckChou/JasonShopBackend'}}
+                  onClick={() => {
+                    window.location.href =
+                      'https://github.com/DuckChou/JasonShopBackend';
+                  }}
                 >
                   Github
                 </button>
@@ -459,7 +465,9 @@ function Content() {
               className="icon contact-icon"
             />
             <p>
-              <a href="https://www.linkedin.com/in/keren-zhou-040325267/">My LinkedIn</a>
+              <a href="https://www.linkedin.com/in/keren-zhou-040325267/">
+                My LinkedIn
+              </a>
             </p>
           </div>
           <div className="contact-info-container">
