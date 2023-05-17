@@ -24,7 +24,7 @@ import keren_aware from '../assets/image/keren_aware.png';
 
 import jason_shop from '../assets/image/jason_shop.png';
 
-import cv from '../assets/files/new CV.pdf';
+import cv from '../assets/files/jasonCV.pdf';
 
 function Content() {
   const handleDownloadCV = () => {
