@@ -33,7 +33,7 @@ function Content() {
     const link = document.createElement('a');
     link.href = fileUrl;
     link.target = '_blank';
-    link.download = 'CVJason.pdf';
+    link.download = 'jasonCV.pdf';
     link.click();
   };
 
