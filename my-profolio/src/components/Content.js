@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 import myImage from '../assets/image/myphoto.png';
 
 import linkedinIcon from '../assets/image/linkedin.png';
@@ -48,9 +50,11 @@ function Content() {
           <h1 className="title">Jason Zhou</h1>
           <p className="section__text__p2">Fullstack Developer</p>
           <div className="btn-container">
-            <button className="btn btn-color-2" onClick={handleDownloadCV}>
+            {/* <button className="btn btn-color-2" onClick={handleDownloadCV}>
               Download CV
-            </button>
+            </button> */}
+            <a href={cv} >Download CV</a>
+
             <button
               className="btn btn-color-1"
               onClick={() => (window.location.href = './#contact')}
