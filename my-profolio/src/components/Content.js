@@ -31,6 +31,7 @@ import cv from '../assets/files/jasonCV.pdf';
 function Content() {
   const handleDownloadCV = () => {
     // window.open('../../public/files/CVJason.pdf', '_blank');
+    console.log(cv);
     const fileUrl = cv;
     const link = document.createElement('a');
     link.href = fileUrl;
@@ -50,10 +51,10 @@ function Content() {
           <h1 className="title">Jason Zhou</h1>
           <p className="section__text__p2">Fullstack Developer</p>
           <div className="btn-container">
-            {/* <button className="btn btn-color-2" onClick={handleDownloadCV}>
+            <button className="btn btn-color-2" onClick={handleDownloadCV}>
               Download CV
-            </button> */}
-            <a href={cv} >Download CV</a>
+            </button>
+            {/* <a href={cv} className="btn btn-color-2">Download CV</a> */}
 
             <button
               className="btn btn-color-1"
