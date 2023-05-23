@@ -160,7 +160,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>HTML</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -171,7 +170,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>CSS</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -182,7 +180,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>SASS</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -193,7 +190,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>React</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
 
@@ -205,7 +201,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>JavaScript</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -216,7 +211,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>TypeScript</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
@@ -227,7 +221,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>React Native</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
               </div>
@@ -245,7 +238,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>PostgreSQL</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
@@ -256,7 +248,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>Django</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
@@ -267,7 +258,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>Python</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -278,7 +268,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>Git</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -289,7 +278,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>AWS CE2</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
@@ -300,7 +288,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>AWS RDS</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
@@ -311,7 +298,6 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>AWS S3</h3>
-                    <p>Basic</p>
                   </div>
                 </article>
               </div>
