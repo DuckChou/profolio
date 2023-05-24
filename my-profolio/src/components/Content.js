@@ -223,6 +223,16 @@ function Content() {
                     <h3>React Native</h3>
                   </div>
                 </article>
+                <article>
+                  <img
+                    src={checkmarkIcon}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div className="text-container">
+                    <h3>JEST</h3>
+                  </div>
+                </article>
               </div>
             </div>
             <div className="details-container">
