@@ -233,6 +233,16 @@ function Content() {
                     <h3>JEST</h3>
                   </div>
                 </article>
+                <article>
+                  <img
+                    src={checkmarkIcon}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div className="text-container">
+                    <h3>WordPress</h3>
+                  </div>
+                </article>
               </div>
             </div>
             <div className="details-container">
@@ -308,6 +318,16 @@ function Content() {
                   />
                   <div className="text-container">
                     <h3>AWS S3</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src={checkmarkIcon}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div className="text-container">
+                    <h3>Nginx</h3>
                   </div>
                 </article>
               </div>
