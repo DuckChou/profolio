@@ -10,7 +10,7 @@ function Header() {
   return (
     <div>
       <nav id="desktop-nav">
-        <div className="logo">Jason Zhou</div>
+        <div className="logo">Keren Zhou</div>
         <div>
           <ul className="nav-links">
             <li>

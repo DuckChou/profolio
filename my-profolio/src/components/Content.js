@@ -44,17 +44,16 @@ function Content() {
     <>
       <section id="profile">
         <div className="section__pic-container">
-          <img src={myImage} alt="Jason Zhou" />
+          <img src={myImage} alt="Keren Zhou" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
-          <h1 className="title">Jason Zhou</h1>
+          <h1 className="title">Keren Zhou</h1>
           <p className="section__text__p2">Fullstack Developer</p>
           <div className="btn-container">
             <button className="btn btn-color-2" onClick={handleDownloadCV}>
               Download CV
             </button>
-            {/* <a href={cv} className="btn btn-color-2">Download CV</a> */}
 
             <button
               className="btn btn-color-1"
