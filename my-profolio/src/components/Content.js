@@ -1,43 +1,55 @@
-import React from 'react';
+// @ts-nocheck
+import React, { useRef } from "react";
 
+import myImage from "../assets/image/myphoto.png";
 
+import linkedinIcon from "../assets/image/linkedin.png";
 
-import myImage from '../assets/image/myphoto.png';
+import githubIcon from "../assets/image/github.png";
 
-import linkedinIcon from '../assets/image/linkedin.png';
+import arrowIcon from "../assets/image/arrow.png";
 
-import githubIcon from '../assets/image/github.png';
+import experienceIcon from "../assets/image/experience.png";
 
-import arrowIcon from '../assets/image/arrow.png';
+import educationIcon from "../assets/image/education.png";
 
-import experienceIcon from '../assets/image/experience.png';
+import checkmarkIcon from "../assets/image/checkmark.png";
 
-import educationIcon from '../assets/image/education.png';
+import emailIcon from "../assets/image/email.png";
 
-import checkmarkIcon from '../assets/image/checkmark.png';
+import phoneIcon from "../assets/image/phone-call.png";
 
-import emailIcon from '../assets/image/email.png';
+import Weather_app from "../assets/image/weatherapp.png";
 
-import phoneIcon from '../assets/image/phone-call.png';
+import blogVideo from "../assets/image/myblog.mp4";
 
-import Weather_app from '../assets/image/weatherapp.png';
+import jason_shop from "../assets/image/jason_shop.png";
 
-import keren_aware from '../assets/image/keren_aware.png';
+import cv from "../assets/files/Keren_Zhou_CV.pdf";
 
-import jason_shop from '../assets/image/jason_shop.png';
-
-import cv from '../assets/files/Keren_Zhou_CV.pdf';
+import { useState } from "react";
 
 function Content() {
   const handleDownloadCV = () => {
     // window.open('../../public/files/CVJason.pdf', '_blank');
     console.log(cv);
     const fileUrl = cv;
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = fileUrl;
-    link.target = '_blank';
-    link.download = 'jasonCV.pdf';
+    link.target = "_blank";
+    link.download = "jasonCV.pdf";
     link.click();
+  };
+
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    videoRef.current.play();
+  };
+
+  const handleMouseLeave = () => {
+    videoRef.current.pause();
+    videoRef.current.currentTime = 0;
   };
 
   return (
@@ -57,7 +69,7 @@ function Content() {
 
             <button
               className="btn btn-color-1"
-              onClick={() => (window.location.href = './#contact')}
+              onClick={() => (window.location.href = "./#contact")}
             >
               Contact Info
             </button>
@@ -69,7 +81,7 @@ function Content() {
               className="icon"
               onClick={() =>
                 (window.location.href =
-                  'https://www.linkedin.com/in/keren-zhou-040325267/')
+                  "https://www.linkedin.com/in/keren-zhou-040325267/")
               }
             />
             <img
@@ -78,7 +90,7 @@ function Content() {
               className="icon"
               onClick={() =>
                 (window.location.href =
-                  'https://github.com/DuckChou?tab=repositories')
+                  "https://github.com/DuckChou?tab=repositories")
               }
             />
           </div>
@@ -97,37 +109,37 @@ function Content() {
                 className="icon"
               />
               <h3>Professional Experience</h3>
-              <div style={{ textAlign: 'start', marginTop: '15px' }}>
+              <div style={{ textAlign: "start", marginTop: "15px" }}>
                 <p>2022.12 - 2023.3 &nbsp; &nbsp; (Canberra, Australia)</p>
-                <p style={{ fontWeight: 'bold' }}>
+                <p style={{ fontWeight: "bold" }}>
                   Osky Interactive - Internship
                 </p>
-                <p style={{ fontWeight: 'bold' }}>Frontend Developer</p>
+                <p style={{ fontWeight: "bold" }}>Frontend Developer</p>
               </div>
-              <div style={{ textAlign: 'start', marginTop: '15px' }}>
+              <div style={{ textAlign: "start", marginTop: "15px" }}>
                 <p>2023.3 - 2023.4 &nbsp; &nbsp; (Canberra, Australia)</p>
-                <p style={{ fontWeight: 'bold' }}>
+                <p style={{ fontWeight: "bold" }}>
                   Osky Interactive - Employee
                 </p>
-                <p style={{ fontWeight: 'bold' }}>Frontend Developer</p>
+                <p style={{ fontWeight: "bold" }}>Frontend Developer</p>
               </div>
             </div>
             <div className="details-container">
               <img src={educationIcon} alt="Education icon" className="icon" />
               <h3>Education</h3>
-              <div style={{ textAlign: 'start', marginTop: '15px' }}>
+              <div style={{ textAlign: "start", marginTop: "15px" }}>
                 <p>2021 - 2023 &nbsp; &nbsp; (Canberra, Australia)</p>
-                <p style={{ fontWeight: 'bold' }}>
+                <p style={{ fontWeight: "bold" }}>
                   Australian National University - Master
                 </p>
-                <p style={{ fontWeight: 'bold' }}>Master of Computing</p>
+                <p style={{ fontWeight: "bold" }}>Master of Computing</p>
               </div>
-              <div style={{ textAlign: 'start', marginTop: '15px' }}>
+              <div style={{ textAlign: "start", marginTop: "15px" }}>
                 <p>2016 - 2020 &nbsp; &nbsp; (Dalian, China)</p>
-                <p style={{ fontWeight: 'bold' }}>
+                <p style={{ fontWeight: "bold" }}>
                   Dalian Maritime University - Bachelors
                 </p>
-                <p style={{ fontWeight: 'bold' }}>
+                <p style={{ fontWeight: "bold" }}>
                   Information Technology and Information System
                 </p>
               </div>
@@ -139,7 +151,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#about')}
+          onClick={() => (window.location.href = "./#about")}
         />
       </section>
 
@@ -286,6 +298,16 @@ function Content() {
                     className="icon"
                   />
                   <div className="text-container">
+                    <h3>PHP</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src={checkmarkIcon}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div className="text-container">
                     <h3>Git</h3>
                   </div>
                 </article>
@@ -337,7 +359,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#skills')}
+          onClick={() => (window.location.href = "./#skills")}
         />
       </section>
 
@@ -347,7 +369,7 @@ function Content() {
         <div className="experience-details-container">
           <div className="about-containers">
             <div className="details-container color-container">
-              <div className="article-container">
+              <div className="img-container">
                 <img
                   src={Weather_app}
                   alt="Project 1"
@@ -358,9 +380,9 @@ function Content() {
                 Weather App
               </h2>
 
-              <p style={{ marginBottom: '10px' }}>React+TypeScript+Sass</p>
-              <p style={{ marginBottom: '10px' }}>Deployed on AWS Amplify</p>
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: "10px" }}>React+TypeScript+Sass</p>
+              <p style={{ marginBottom: "10px" }}>Deployed on AWS Amplify</p>
+              <p style={{ marginBottom: "10px" }}>
                 weather app that can show the weather of the city you search for
                 or your current location.
               </p>
@@ -369,7 +391,7 @@ function Content() {
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      'https://github.com/DuckChou/Weather_app';
+                      "https://github.com/DuckChou/Weather_app";
                   }}
                 >
                   Github
@@ -378,7 +400,7 @@ function Content() {
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      'https://main.d2ptziliarbev6.amplifyapp.com/';
+                      "https://main.d2ptziliarbev6.amplifyapp.com/";
                   }}
                 >
                   Live Demo
@@ -386,22 +408,22 @@ function Content() {
               </div>
             </div>
             <div className="details-container color-container">
-              <div className="article-container">
+              <div className="img-container">
                 <img src={jason_shop} alt="Project 2" className="project-img" />
               </div>
               <h2 className="experience-sub-title project-title">Jason Shop</h2>
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: "10px" }}>
                 React+Python Django+PostgreSQL+Paypal
               </p>
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: "10px" }}>
                 Deployed with AWS EC2, AWS RDS, AWS S3
               </p>
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: "10px" }}>
                 An e-commerce website that allows users to browse products, add
                 products to cart, and checkout with Paypal.
               </p>
-              <p style={{ marginBottom: '10px' }}>
-                Admin can manage products, orders, and users in the admin panel.{' '}
+              <p style={{ marginBottom: "10px" }}>
+                Admin can manage products, orders, and users in the admin panel.{" "}
                 <br />
                 (username: admin@admin.com <br /> password: admin)
               </p>
@@ -410,7 +432,7 @@ function Content() {
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      'https://github.com/DuckChou/JasonShopBackend';
+                      "https://github.com/DuckChou/JasonShopBackend";
                   }}
                 >
                   Github
@@ -419,7 +441,7 @@ function Content() {
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      'https://main.d1qiuxeis8lh6i.amplifyapp.com/';
+                      "https://main.d1qiuxeis8lh6i.amplifyapp.com/";
                   }}
                 >
                   Live Demo
@@ -427,28 +449,34 @@ function Content() {
               </div>
             </div>
             <div className="details-container color-container">
-              <div className="article-container">
-                <img
-                  src={keren_aware}
-                  alt="Project 3"
-                  className="project-img"
-                />
+              <div
+                className="img-container"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <video
+                  ref={videoRef}
+                  src={blogVideo}
+                  className="project-video"
+                  loop
+                  muted
+                ></video>
               </div>
-              <h2 className="experience-sub-title project-title">Aware App</h2>
-              <p style={{ marginBottom: '10px' }}>Vue+Python Flask</p>
-              <p style={{ marginBottom: '10px' }}>
-                Aware app is a web application that can help people to be more
-                aware of their exercise.
+              <h2 className="experience-sub-title project-title">
+                Jason's Blog
+              </h2>
+              <p style={{ marginBottom: "10px" }}>(developing)</p>
+              <p style={{ marginBottom: "10px" }}>React+Springboot</p>
+              <p style={{ marginBottom: "10px" }}>
+                My personal blog website to share tech and life.
               </p>
-              <p style={{ marginBottom: '10px' }}>
-                (username:keren_Aware, password:971227)
-              </p>
+
               <div className="btn-container">
                 <button
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      'https://github.com/DuckChou/flaskbe';
+                      "https://github.com/DuckChou/flaskbe";
                   }}
                   // onclick="location.href='https://github.com/'"
                 >
@@ -456,8 +484,9 @@ function Content() {
                 </button>
                 <button
                   className="btn btn-color-2 project-btn"
+                  disabled
                   onClick={() => {
-                    window.location.href = 'https://duckchou.github.io/Aware/';
+                    window.location.href = "https://duckchou.github.io/Aware/";
                   }}
                 >
                   Live Demo
@@ -470,7 +499,7 @@ function Content() {
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrow"
-          onClick={() => (window.location.href = './#projects')}
+          onClick={() => (window.location.href = "./#projects")}
         />
       </section>
 
@@ -511,14 +540,13 @@ function Content() {
             <p>0432231694</p>
           </div>
         </div>
-        
+
         <img
           src={arrowIcon}
           alt="Arrow icon"
           className="icon arrowContact"
-          onClick={() => (window.location.href = './#contact')}
+          onClick={() => (window.location.href = "./#contact")}
         />
-        
       </section>
     </>
   );
