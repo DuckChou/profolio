@@ -484,9 +484,8 @@ function Content() {
                 </button>
                 <button
                   className="btn btn-color-2 project-btn"
-                  disabled
                   onClick={() => {
-                    window.location.href = "https://duckchou.github.io/Aware/";
+                    window.location.href = "https://main.d5h1ysjhz5xo5.amplifyapp.com/";
                   }}
                 >
                   Live Demo
