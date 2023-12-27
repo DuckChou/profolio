@@ -476,7 +476,7 @@ function Content() {
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
                     window.location.href =
-                      "https://github.com/DuckChou/flaskbe";
+                      "https://github.com/DuckChou/JasonBlogFrontend";
                   }}
                   // onclick="location.href='https://github.com/'"
                 >
@@ -485,7 +485,7 @@ function Content() {
                 <button
                   className="btn btn-color-2 project-btn"
                   onClick={() => {
-                    window.location.href = "https://main.d5h1ysjhz5xo5.amplifyapp.com/";
+                    window.location.href = "https://kerenzhou.com/";
                   }}
                 >
                   Live Demo
